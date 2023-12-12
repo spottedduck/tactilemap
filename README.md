@@ -3,7 +3,7 @@ Steps for creating a tactile map from scratch, inspired by Touch Mapper (https:/
 
 Fusion 360 and Illustrator can be substituted for your preferred software.
 
-Obtaining roads and building vectors for extrusion
+## Obtaining roads and building vectors for extrusion
 - Option 1: no drawing or tracing required
   - Select monochrome template when creating new style in https://studio.mapbox.com
   - Turn off visibility for all layers
@@ -31,7 +31,7 @@ Save the roads, buildings, and symbols layer each individually as .svg
 Hide all other layers > select your object > file > gather assets for export > select to export as .svg 
 Symbols can be gathered and exported as 1 single asset. They can be individually moved and changed in the 3D modeling software. 
 
-Braille
+## Braille
 Use https://www.touchsee.me/ to generate STL of bus stop labels in braille using U.S. English uncontracted. 
 Remove the base (optional)
 In Autodesk Fusion
@@ -43,20 +43,20 @@ Click and drag across the base > release > adjust the height of the cut using th
 Click OK
 File > export > export as .STL
 
-Create 3D printable model in Autodesk Fusion 360
-Base
+## Create 3D printable model in Autodesk Fusion 360
+# Base
 Orient your view so that the XY plane faces you
 
 Solid > create sketch > select 2-point rectangle > select the XY plane 
 Draw and create a square, recommended 17x17 cm or 20x20 cm which fits most 3D printers
 Solid > extrude 1-5 mm, depending on how thick you want the base height to be
-Frame
+# Frame
 Repeat base steps to create another cube that sits on top of the original base.
 Create a sketch and select the XY plane of the cube you just created, which allows the sketch to sit on the surface of the cube.
 Draw and create a square 1-2 mm smaller than the surface of the base.
 Hide the base layer, so that only the second cube and sketch remain.
 Extrude > select the square sketch > drag the arrow all the way through the cube to create a frame. 
-Map elements
+# Map elements
 Insert > insert SVG to open your symbols, roads, and buildings files and extrude them. Ensure they are oriented properly so they lay on the XY plane.
 Extrude roads 2 mm
 Extrude buildings 1 mm
@@ -67,5 +67,6 @@ Use solid > modify > align to align features to sit on top of the base layer.
 Use move/copy and scale to adjust as needed.
 Create a legend with the symbols and Braille labels. Ensure Braille complies with minimum standards. 
 Create an orientation marker by placing a cube in the upper right corner of the frame
+
 Export the map as .STL 
 Slice the file in your preferred slicing program and print it. We used PLA filament.
