@@ -3,6 +3,7 @@ Steps for creating a tactile map from scratch, inspired by Touch Mapper (https:/
 Fusion 360 and Illustrator can be substituted for your preferred software.
 
 # Obtaining roads and building vectors for extrusion
+1. Obtain base map
 - Option 1: no drawing or tracing required
   - Select monochrome template when creating new style in https://studio.mapbox.com
   - Turn off visibility for all layers
@@ -13,22 +14,22 @@ Fusion 360 and Illustrator can be substituted for your preferred software.
     - Take screenshot or select Print > export (limit 100 per month)
     - Do not pan or zoom the map
   - To obtain the building layer
-Toggle visibility of Buildings (built) > building
-Change fill color and stroke color to black
-Take screenshot or select Print > export (limit 100 per month)
-For each, open the image in Adobe Illustrator and run Image Trace 
-Change stroke weight to adjust width of roads
-Option 2: tracing or drawing a map you want to recreate
-Paste an image of a map you would like to recreate in Illustrator. Ensure the map has North facing up. 
-Trace the map roads and buildings, being sure to reduce detail/jagged edges for roads (we only need the general direction of the road). 
-Use the smoothing tool to further smooth the roads. 
-Create a new layer and create your symbols. 
-Symbols for tactile maps should have enough space from other features and be distinct from each other. 
-Do not use both square and circle symbols at the same time.
-Some options are stars, 
-Save the roads, buildings, and symbols layer each individually as .svg 
-Hide all other layers > select your object > file > gather assets for export > select to export as .svg 
-Symbols can be gathered and exported as 1 single asset. They can be individually moved and changed in the 3D modeling software. 
+    - Toggle visibility of Buildings (built) > building
+    - Change fill color and stroke color to black
+    - Take screenshot or select Print > export (limit 100 per month)
+  - For each screenshot, open the image in Adobe Illustrator and run Image Trace
+  - Change stroke weight to adjust width of roads
+- Option 2: tracing or drawing a map you want to recreate
+-   Paste an image of a map you would like to recreate in Illustrator. Ensure the map has North facing up.
+-   Trace the map roads and buildings, being sure to reduce detail/jagged edges for roads (we only need the general direction of the road).
+-   Use the smoothing tool to further smooth the roads.
+2. Create a new layer and create your symbols.
+-   Symbols for tactile maps should have enough space from other features and be distinct from each other.
+-   Do not use both square and circle symbols at the same time.
+-   Guidelines to follow: https://www.tandfonline.com/doi/full/10.1080/00087041.2022.2097760
+3. Save the roads, buildings, and symbols layer each individually as .svg
+- Hide all other layers > select your object > file > gather assets for export > select to export as .svg
+- Symbols can be gathered and exported as 1 single asset. They can be individually moved and changed in the 3D modeling software. 
 
 # Braille
 Use https://www.touchsee.me/ to generate STL of bus stop labels in braille using U.S. English uncontracted. 
@@ -42,7 +43,8 @@ Click and drag across the base > release > adjust the height of the cut using th
 Click OK
 File > export > export as .STL
 
-# Create 3D printable model in Autodesk Fusion 360
+# Create 3D printable model
+In Autodesk's Fusion 360. You can use Blender or your preferred 3D modeling software.
 ## Base
 Orient your view so that the XY plane faces you
 
@@ -68,4 +70,4 @@ Create a legend with the symbols and Braille labels. Ensure Braille complies wit
 Create an orientation marker by placing a cube in the upper right corner of the frame
 
 Export the map as .STL 
-Slice the file in your preferred slicing program and print it. We used PLA filament.
+Slice the file in your preferred slicing program and print it. We used PLA filament. It took 5 hours to print with 3 slices. 
