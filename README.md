@@ -2,6 +2,8 @@
 Steps for creating a tactile map from scratch, inspired by Touch Mapper (https://touch-mapper.org). 
 Fusion 360 and Illustrator can be substituted for your preferred software.
 
+![Screenshot](IMG_6092.JPG)
+
 # Obtaining roads and building vectors for extrusion
 1. Obtain base map
 - Option 1: no drawing or tracing required
